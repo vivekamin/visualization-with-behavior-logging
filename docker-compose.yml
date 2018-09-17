@@ -7,7 +7,6 @@ services:
       - 3000:3000
     volumes: 
       - ./react-client:/usr/src/app
-      - node_modules:/usr/src/app/node_modules
       
 
   server:
@@ -16,7 +15,6 @@ services:
       - 3001:3000
     volumes:
       - ./express-server:/usr/src/backend-app
-      - node_modules_b:/usr/src/backend-app/node_modules
     depends_on: 
       - mongo
 
@@ -28,8 +26,6 @@ services:
       - "27017:27017"
 
 volumes: 
-  node_modules:
-  node_modules_b:
   data:
     
 
