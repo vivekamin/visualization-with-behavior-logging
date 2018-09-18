@@ -7,11 +7,17 @@ const mongoose = require('mongoose');
 
 const bodyParser = require('body-parser');
 
+const passport = require("passport");
+const jwtStrategry  = require("./Authentication");
+passport.use(jwtStrategry);
+
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var registerRouter = require('./routes/register');
 var loginRouter = require('./routes/login');
+var protectedRouter = require('./routes/protected');
+var loginHistoryRouter = require('./routes/login.history');
 
 var app = express();
 
@@ -69,6 +75,8 @@ app.use('/users', usersRouter);
 app.use('/users', usersRouter);
 app.use('/register', registerRouter);
 app.use('/login', loginRouter);
+app.use('/login_history', loginHistoryRouter);
+app.use('/protected', passport.authenticate('jwt', {session: false}), protectedRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
