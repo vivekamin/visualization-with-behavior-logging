@@ -18,6 +18,8 @@ var registerRouter = require('./routes/register');
 var loginRouter = require('./routes/login');
 var protectedRouter = require('./routes/protected');
 var loginHistoryRouter = require('./routes/login.history');
+var eventRouter = require('./routes/events');
+var tagRouter = require('./routes/tags')
 
 var app = express();
 
@@ -76,7 +78,12 @@ app.use('/users', usersRouter);
 app.use('/register', registerRouter);
 app.use('/login', loginRouter);
 app.use('/login_history', loginHistoryRouter);
+app.use('/events', eventRouter);
+app.use('/tags', tagRouter);
+
 app.use('/protected', passport.authenticate('jwt', {session: false}), protectedRouter);
+
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

@@ -20,10 +20,10 @@ class LoginHistory extends Component {
                 <Grid
                     textAlign='center'
                     style={{height: '100%',paddingTop:'5%'}}
-                    verticalAlign='middle'
+                    
                     
                 >
-                <Table inverted style={{maxWidth: '20%'}} >
+                <Table inverted style={{maxWidth: '30%'}} >
                 <Table.Header>
                 <Table.Row>
                     <Table.HeaderCell>Login History----</Table.HeaderCell>
