@@ -16,6 +16,7 @@ router.get('/', (req, res, next) => {
                         email: doc.email,
                         event_name: doc.event_name,
                         event_relevance: doc.event_relevance,
+                        event_count: doc.event_count,
                         _id: doc._id,
                     }
                 })
@@ -44,6 +45,7 @@ router.get('/:emailId', (req, res, next) => {
                         email: doc.email,
                         event_name: doc.event_name,
                         event_relevance: doc.event_relevance,
+                        event_count: doc.event_count,
                         _id: doc._id,
                     }
                 })
@@ -61,12 +63,13 @@ router.get('/:emailId', (req, res, next) => {
 
 
 router.post('/', (req, res, next) => {
-
+    console.log(req.body.event_count);
     const event = new Event({
         _id: new mongoose.Types.ObjectId(),
         email: req.body.email,
         event_name: req.body.event_name,
-        event_relevance: req.body.event_relevance
+        event_relevance: req.body.event_relevance,
+        event_count:req.body.event_count
     });
 
     event
@@ -78,6 +81,7 @@ router.post('/', (req, res, next) => {
                 User: {
                     email: result.email,
                     event_name: result.event_name,
+                    event_count:result.event_count,
                     _id: result._id,
                 }
             });

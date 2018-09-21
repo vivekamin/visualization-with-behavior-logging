@@ -39,27 +39,47 @@ router.post('/', (req, res, next) => {
       email: req.body.email,
       password: req.body.password
   });
-
-  user
-      .save()
+  User.findOne({email: req.body.email}).exec()
       .then( result => {
           console.log(result);
-          res.status(200).json({
-              message: "User Created",
-              User:{
-                  email: result.email,
-                  
-                  _id: result._id,
-              }
-          });
-          
-      }).catch( error => {
-          console.log(error);
-          res.status(500).json({
-              error: error
-          });
-          
-      });
+          if(result == null){
+            user
+            .save()
+            .then( result => {
+                console.log(result);
+                res.status(200).json({
+                    message: "User Created",
+                    User:{
+                        email: result.email,
+                        
+                        _id: result._id,
+                    }
+                });
+                
+            }).catch( error => {
+                console.log(error);
+                res.status(500).json({
+                    error: error
+                });
+                
+            });
+
+
+          }
+          else{
+            res.status(500).json({
+                error: "user already registered"
+            });
+          }
+        
+      })
+      .catch( err => {
+        console.log(err);
+        
+
+      })
+
+  
 
  
 });

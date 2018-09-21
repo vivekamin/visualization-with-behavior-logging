@@ -45,6 +45,8 @@ export default class  extends Component {
             }
             catch(error){
                 console.log(error);
+                this.setState({warning:true});
+
             }
 
         }
@@ -121,12 +123,14 @@ export default class  extends Component {
                                 
                                 
 
-                            
+                                <Button as={Link} to='/' primary size='huge'  style={{margin: '1em'}}>
+                                    Home
+                                </Button>
                                 <Button type="submit" style={{marginRight: '1em', paddingRight: '0.8em'}} primary
                                         onClick={this.handleClick}  size='huge'> Register <Icon
                                     name='sign in'/></Button>
                                 <Message negative hidden={!this.state.warning}>
-                                    <Message.Header>Password mismatch!</Message.Header>
+                                    <Message.Header>Password mismatch! or Username already exist!</Message.Header>
                                     <p>Please try again</p>
                                 </Message>
                                 <Message positive hidden={!this.state.success}>

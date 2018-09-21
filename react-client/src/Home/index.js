@@ -35,14 +35,20 @@ export default class  extends Component {
     render() {
 
         return (
-            <div className='login-form' >
-                
+           
+                <Segment style={{margin:'5%'}}>
+                <Header as='h2' icon textAlign='center' style={{paddingTop:'5%'}}>
+                <Icon name='users' circular />
+                <Header.Content>Social visualization with behavior logging.</Header.Content>
+                </Header>
                 <Grid
                     textAlign='center'
-                    style={{paddingTop:'15%'}}
+                    style={{padding:'5%'}}
                     
                 >
+                
                 <Grid.Column style={{maxWidth: 450}}>
+                
                         <Header id="example2" as='h2' 
                                 style={{
                                     fontSize: '1.7em',
@@ -64,8 +70,9 @@ export default class  extends Component {
                 </Button>
                 </Grid.Column>
             </Grid>
+            </Segment>
 
-        </div>
+        
         );
     }
 

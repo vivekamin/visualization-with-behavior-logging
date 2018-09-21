@@ -5,6 +5,7 @@ const eventSchema = mongoose.Schema({
     email: {type: String, required: true},
     event_name : {type: String},
     event_relevance: {type: String},
+    event_count: {type: Number}
 
 
 });

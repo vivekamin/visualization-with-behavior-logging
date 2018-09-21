@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Segment, Grid, Header, Form, Button, Icon, Message} from 'semantic-ui-react'
 import Axios from 'axios';
-import {Redirect} from 'react-router-dom';
+import {Redirect, Link} from 'react-router-dom';
 
 export default class  extends Component {
     constructor(props) {
@@ -96,10 +96,15 @@ export default class  extends Component {
                                 />
                                 
 
-                            
+                                
                                 <Button type="submit" style={{marginRight: '1em', paddingRight: '0.8em'}} primary
                                         onClick={this.handleClick} loading={this.state.loading} size='huge'> Login <Icon
-                                    name='sign in'/></Button>
+                                    name='sign in'/>
+                                </Button>
+                                <Message positive >
+                                    <Message.Header>New User!</Message.Header>
+                                    <p>Click <Link to='/register' > here to Register!</Link></p>
+                                </Message>
                                 <Message negative hidden={!this.state.warning}>
                                     <Message.Header>Login credentials are incorrect!</Message.Header>
                                     <p>Please try again</p>
