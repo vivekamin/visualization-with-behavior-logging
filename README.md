@@ -2,13 +2,15 @@
 Youtube Video Link: https://www.youtube.com/watch?v=gWO4xjs-mDo&feature=youtu.be
 
 How to run the assignment:
-    -Run the exetension
+
+    - Run the exetension
+
         - Chrome -> More Tools -> Extensions -> Load unpacked
-        -Load `aw-extension` folder
+        - Load `chrome-extension` folder
 
 Run the full-stack(MERN) application:
 
-    - If you are familiar with Docker Just follow the below commands based on OS
+    * If you are familiar with Docker Just follow the below commands based on OS
 
         - Dockerized MERN stack developement environment
 
@@ -27,9 +29,9 @@ Run the full-stack(MERN) application:
             - Start coding!
             - Stop containers and removes volumes:  Run `docker-compose down -v`
 
-    After running `docker-compose up` go to `localhost:3000` which is front-end application and you are good to go
+    * After running `docker-compose up` go to `localhost:3000` which is front-end       application and you are good to go
 
-    - If not using with docker
+    * If not using with docker
         - Install MongoDB
         - Set DATA folder in the `docker-react-express` as database for it
         - go to `express-server` do npm start(as I have sent the node modules also)
