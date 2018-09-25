@@ -29,7 +29,7 @@ Run the full-stack(MERN) application:
             - Start coding!
             - Stop containers and removes volumes:  Run `docker-compose down -v`
 
-    * After running `docker-compose up` go to `localhost:3000` which is front-end       application and you are good to go
+    * After running `docker-compose up` go to `localhost:3000` which is front-end application and you are good to go
 
     * If not using with docker
         - Install MongoDB
