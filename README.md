@@ -1,4 +1,5 @@
-# docker-react-express
+# Social visualization with behavior logging
+
 Youtube Video Link: https://www.youtube.com/watch?v=gWO4xjs-mDo&feature=youtu.be
 
 How to run the assignment:
