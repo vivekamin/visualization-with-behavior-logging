@@ -1,6 +1,10 @@
 # Social visualization with behavior logging
 
-Project is about social visualization using behavioral logging. The system consist two componenet, 1) Chrome Extension, 2) Full Stack Application. Using chrome extension, system logs different types of user behavior on Stackoverflow.com, this data then processed in Express App. User then can loggin to React application to explore and discover facts and patterns using Social Visualization. 
+Project is about social visualization using behavioral logging. The system consist two componenet, 
+1) Chrome Extension, 
+2) Full Stack Application.
+
+Using chrome extension, system logs different types of user behavior on Stackoverflow.com, this data then processed in Express App. User then can loggin to React application to explore and discover facts and patterns using Social Visualization. 
 
 
 Youtube Video Link: https://www.youtube.com/watch?v=gWO4xjs-mDo&feature=youtu.be
