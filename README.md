@@ -1,6 +1,7 @@
 # Social visualization with behavior logging
-
-Project is about social visualization using behavioral logging. The system consist two componenet, 
+Build a System to provide insight into user’s activity and interaction of StackOverflow. Logged interaction using chrome
+extension and visualized those interactions using a Web Application developed using MongoDB, Express, React.js and Node.
+The system consist two componenet, 
 1) Chrome Extension
 2) Full Stack Application
 
