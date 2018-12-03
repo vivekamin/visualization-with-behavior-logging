@@ -2,14 +2,14 @@
 ![image](https://user-images.githubusercontent.com/25477734/48755954-7c342400-ec54-11e8-88f5-364b84dd9070.png)
 
 ## Project Description
-#### Build a System to provide insight into user’s activity and interaction of StackOverflow. Logged interaction using chrome
-extension and visualized those interactions using a Web Application developed using MongoDB, Express, React.js and Node.
+#### Build a System to provide insight into user’s activity and interaction of StackOverflow. Logged interaction using chrome extension and visualized those interactions using a Web Application developed using MongoDB, Express, React.js and Node.
+
 The system consist two componenet, 
 1) Chrome Extension
 2) Full Stack Application
 
 
-#### Using chrome extension, system logs different types of user behavior on Stackoverflow.com, this data then processed in Express App. User then can loggin to React application to explore and discover facts and patterns using Social Visualization. 
+Using chrome extension, system logs different types of user behavior on Stackoverflow.com, this data then processed in Express App. User then can loggin to React application to explore and discover facts and patterns using Social Visualization. 
 
 
 Youtube Video Link: https://www.youtube.com/watch?v=gWO4xjs-mDo&feature=youtu.be
