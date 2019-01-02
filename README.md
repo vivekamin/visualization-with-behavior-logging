@@ -1,8 +1,6 @@
 # Social visualization with behavior logging
 
-<kbd>
-  <img src="https://user-images.githubusercontent.com/25477734/48755954-7c342400-ec54-11e8-88f5-364b84dd9070.png">
-</kbd>
+<p align="center"><img style="align:center" src="https://j.gifs.com/APJGv1.gif"/> </p>
 
 
 ## Project Description
